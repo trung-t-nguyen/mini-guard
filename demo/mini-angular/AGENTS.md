@@ -10,7 +10,7 @@
 - `src/app/guard-demo/guard-demo.component.html` — template using `@for` / `@if` control flow
 - `src/app/app.ts` — root component, just renders `<app-guard-demo />`
 - `src/styles.css` — `@import "tailwindcss";`
-- `postcss.config.mjs` — `@tailwindcss/postcss` plugin
+- `.postcssrc.json` — `@tailwindcss/postcss` plugin (build-time Tailwind, no CDN)
 
 ## Angular conventions used
 - Standalone components (no NgModule)
