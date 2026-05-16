@@ -45,8 +45,7 @@ export class MiniGuard {
 
   private _log(...args: unknown[]): void {
     const env = (globalThis as { process?: { env?: Record<string, string> } }).process?.env;
-    if (this._debug || env?.MINI_GUARD_DEBUG)
-      console.debug('[MiniGuard]', ...args);
+    if (this._debug || env?.MINI_GUARD_DEBUG) console.debug('[MiniGuard]', ...args);
   }
 
   init(token: string): void {
